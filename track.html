@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cutive' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>track</title>
+</head>
+<style>
+     .textbox{
+            float: right;
+            border:1px solid solid black;
+        }
+ ul li{
+            float:right;
+            list-style-type: none;
+            width: 150px;
+            text-transform: uppercase;
+            font-style: bold;
+            font-family: kalim park,sans-serif;
+        }
+        ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        ul li a:hover{
+               color:white;
+               border-bottom:2px solid white;
+               font-weight: normal;
+               font-size: large;
+        }
+    body{
+        background-color: black;
+        background-size: cover;
+    }
+    .icon{
+        font-size:70px;
+        color:rebeccapurple;
+        font-family: kulim park,sans-serif;
+        position: absolute;
+        left:1%;
+        font-weight: bold;
+    }
+     span{
+        color:hotpink;
+    }
+    .context{
+           position: absolute;
+           left:2%;    
+           top:29%;
+           
+        }
+    h6{
+            font-size:50px;
+            color:white;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+            width:550px;
+            margin-top: -16%;
+            word-spacing:5px;
+            opacity:0.8;
+            text-align:justify;
+        }
+        .cover{
+            border: 1px solid black;
+            text-align:center;
+            width:400px;
+            height:200px;
+            position:absolute;
+            left:10%;
+            top:20%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 16px 7px;
+            opacity:0.9;
+        }
+        .Subcover{
+           border-bottom: 1px solid none;
+           background: black;
+           width: 400px;
+           height:200px;
+           opacity:0.6;
+           border-radius: 8px;
+        }
+        .cover-image{
+            text-align: center;
+        }
+        img{
+            border-radius: 10px;
+            position: absolute;
+            left:-30%;
+            top:25%;
+            height:100%;
+            width:100%;
+            margin:-10px -9px;
+            opacity:0.8;
+        }
+        .cover .Subcover.cover-image img:hover{
+             position:absolute;
+             height:101.2%;
+             width:101.2%;
+
+         }
+        .song img{
+            float:absolute;
+            top:26.3%;
+            left:28%;
+            height:26%;
+            width:25.5%;
+        }
+        .song img:hover{
+         position:absolute;
+         height:28%;
+         width:28%;
+         
+        }
+       .punjab img{
+           float:absolute;
+          top:26.3%;
+           height:26%;
+           width:24.9%;
+           left:54.1%;
+          }
+          .punjab img:hover{
+              position: absolute;
+              height: 28%;
+              width: 27%;
+          }
+       .english img{
+           float:absolute;
+           top:22%;
+           left:79.4%;
+           height:34.3%;
+           width:19.5%;
+           border-radius: 20px;
+       }
+       .english img:hover{
+           position: absolute;
+           height:36%;
+           width:21%;
+       }
+       .content{
+           position: absolute;
+           top:67%;
+           left:2%;
+           font-family: titillium web,sans serif;
+            font-weight: normal;
+       }
+       .romance img{
+        float:absolute;
+        top:67%;
+        left:2%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .romance img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+       .gaana img{
+        float:absolute;
+        top:67%;
+        left:15%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .gaana img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+
+       .bhakti img{
+        float:absolute;
+        top:67%;
+        left:27%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .bhakti img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+
+       .party img{
+        float:absolute;
+        top:67%;
+        left:39%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .party img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+
+       .mirchi img{
+        float:absolute;
+        top:67%;
+        left:51%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+         .mirchi img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+
+       .show img{
+        float:absolute;
+        top:67%;
+        left:63%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .show img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+
+       .hip img{
+        float:absolute;
+        top:67%;
+        left:74%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .hip img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+       .bhangra img{
+        float:absolute;
+        top:67%;
+        left:86%;
+        height:26%;
+        width:10%;
+        border-radius: 10px;
+       }
+       .bhangra img:hover{
+           position: absolute;
+           height:27%;
+           width:11%;
+       }
+    .con{
+        position: absolute;
+        top:105%;
+        left:2%;
+        font-family: titillium web,sans serif;
+            font-weight: normal;
+    }
+    *{
+        box-sizing: border-box;
+    }
+   .single-team img{
+       position: absolute;
+       left:2%;
+       top:107%;
+       height:35%;
+       width:20%;
+   }
+   .single-team img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .single img{
+       position: absolute;
+       left:23%;
+       top:107%;
+       height:35%;
+       width:20%;
+   }
+   .single img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .team img{
+       position: absolute;
+       left:44%;
+       top:107%;
+       height:35%;
+       width:20%;
+   }
+   .team img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .single-team .team-text{
+       position: absolute;
+       top:106%;
+       left:1.5%;
+       background:rgba(0,0,0,.8);
+       height:34%;
+       width:8%;
+       
+   }
+   
+   .single-team .team-text .a{
+       position: absolute;
+       top:3%;
+       left:35%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .single-team .team-text .a:hover{
+       overflow: hidden;
+       height:26%;
+       width:9%;
+   }
+   .single .team{
+       position: absolute;
+       top:105.9%;
+       left:22.5%;
+       background:rgba(0,0,0,.8);
+       height:33%;
+       width:8%;
+       
+   }
+   
+   .single .team .b{
+       position: absolute;
+       top:10%;
+       left:44%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .single .team .b:hover{
+       overflow: hidden;
+       height:26%;
+       width:9%;
+   }
+
+   .team .text{
+       position: absolute; 
+       top:105%;
+       left:43.5%;
+       background:rgba(0,0,0,.8);
+       height:35%;
+       width:8%;
+       
+   }
+   
+   .team .text .c{
+       position: absolute;
+       top:3%;
+       left:35%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .team .text .c:hover{
+       overflow: hidden;
+       height:26%;
+       width:9%; 
+   } 
+   .artist{
+       position: absolute;
+            top:160%;
+            left:2%;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+  .rounded{
+       position: absolute;
+       top:155%;
+       left:7%;
+       height:200px;
+       width:200px;
+      
+   }
+    .rounded img{
+       border-radius: 50%;
+   } 
+   .rounded img:hover{
+       height:203px;
+       width:203px;
+   }
+   .t {
+       position: absolute;
+       color:#fff;
+       top:166%;
+       left:-43%;
+       font-size:1px;
+       font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .round{
+       position: absolute;
+       top:155%;
+       left:25%;
+       height:200px;
+       width:200px;
+      
+   }
+    .round img{
+       border-radius: 50%;
+   } 
+   .round img:hover{
+       height:203px;
+       width:203px;
+   }
+   .t2{
+       position: absolute;
+       color:#fff;
+       top:170%;
+       left:-31%;
+       font-size:1px;
+       font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .roun{
+       position: absolute;
+       top:155%;
+       left:44%;
+       height:200px;
+       width:200px;
+      
+   }
+    .roun img{
+       border-radius: 50%;
+   } 
+   .roun img:hover{
+       height:203px;
+       width:203px;
+   }
+   .t1{
+       position: absolute;
+       color:#fff;
+       top:170%;
+       left:-40%;
+       font-size:1px;
+       font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .rou{
+       position: absolute;
+       top:155%;
+       left:67%;
+       height:200px;
+       width:200px;
+      
+   }
+    .rou img{
+       border-radius: 50%;
+   } 
+   .rou img:hover{
+       height:203px;
+       width:203px;
+   }
+   .t3{
+       position: absolute;
+       color:#fff;
+       top:170%;
+       left:-34%;
+       font-size:1px;
+       font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .ro{
+       position: absolute;
+       top:155%;
+       left:87%;
+       height:200px;
+       width:200px;
+      
+   }
+    .ro img{
+       border-radius: 50%;
+   } 
+   .ro img:hover{
+       height:203px;
+       width:203px;
+   }
+   .t4{
+       position: absolute;
+       color:#fff;
+       top:170%;
+       left:-13%;
+       font-size:1px;
+       font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .art{
+       position: absolute;
+            top:215%;
+            left:2%;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .the img{
+       position: absolute;
+       left:2%;
+       top:215%;
+       height:200px;
+       width:320px;
+   }
+   .the img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .the .mera{
+       position: absolute;
+       top:210%;
+       left:1.5%;
+       background:rgba(0,0,0,.8);
+       height:33%;
+       width:15%;
+       
+   }
+   
+   .the .mera .g{
+       position: absolute;
+       top:-6%;
+       left:35%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .the  .mera p{
+       position: absolute;
+       top:110%;
+       left:5%;
+   }
+   .the .mera.g:hover{
+       overflow: hidden;
+       height:10%;
+       width:3%;
+   }
+
+   .my img{
+       position: absolute;
+       left:24%;
+       top:215%;
+       height:200px;
+       width:320px;
+   }
+   .my img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .my .dil{
+       position: absolute;
+       top:210%;
+       left:23%;
+       background:rgba(0,0,0,.8);
+       height:33%;
+       width:15%;
+       
+   }
+   
+   .my .dil .h{
+    position: absolute;
+       top:-6%;
+       left:35%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .my  .dil p{
+       position: absolute;
+       top:94%;
+       left:3%;
+   }
+   .my .dil.h:hover{
+       overflow: hidden;
+       height:10%;
+       width:3%;
+   }
+
+   .name img{
+       position: absolute;
+       left:46%;
+       top:215%;
+       height:200px;
+       width:320px;
+   }
+   .name img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .name .bhi{
+       position: absolute;
+       top:210%;
+       left:45%;
+       background:rgba(0,0,0,.8);
+       height:33%;
+       width:15%;
+       
+   }
+   
+   .name .bhi .i{
+    position: absolute;
+    left:24%;
+    top:-6%;
+       left:35%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .name .bhi p{
+       position: absolute;
+       top:99%;
+       left:3%;
+   }
+   .name.bhi.i:hover{
+       overflow: hidden;
+       height:10%;
+       width:3%;
+   }
+
+
+   .is img{
+       position: absolute;
+       left:70%;
+       top:215%;
+       height:200px;
+       width:320px;
+   }
+   .is img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .is .kitna{
+       position: absolute;
+       top:210%;
+       left:67%;
+       background:rgba(0,0,0,.8);
+       height:33%;
+       width:15%;
+       
+   }
+   .is .kitna .s{
+    position: absolute;
+    left:24%;
+    top:-6%;
+       left:35%;
+       transform:translate(-50%);
+       text-align: center;
+       padding:15px;
+       color:#fff;
+   }
+   .is .kitna p{
+       position: absolute;
+       top:87%;
+       left:19%;
+   }
+   .is.kitna .s:hover{
+       overflow: hidden;
+       height:10%;
+       width:3%;
+   }
+
+   .out{
+       position: absolute;
+            top:265%;
+            left:2%;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+
+   .work img{
+       position: absolute;
+       left:2%;
+       top:268%;
+       height:200px;
+       width:320px;
+   }
+   .work img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .work p{
+       position: absolute;
+       top:285%;
+       left:2.5%;
+   }
+   .wor img{
+       position: absolute;
+       left:24%;
+       top:268%;
+       height:200px;
+       width:320px;
+   }
+   .wor img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .wor p{
+       position: absolute;
+       top:285%;
+       left:24%;
+   }
+   .wo img{
+       position: absolute;
+       left:48%;
+       top:268%;
+       height:200px;
+       width:320px;
+   }
+   .wo img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .wo p{
+       position: absolute;
+       top:285%;
+       left:48%;
+   }
+
+   .ow img{
+       position: absolute;
+       left:71%;
+       top:268%;
+       height:200px;
+       width:320px;
+   }
+   .ow img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .ow p{
+       position: absolute;
+       top:285%;
+       left:71%;
+   }
+
+   .pop{
+       position: absolute;
+            top:314%;
+            left:2%;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .popular img{
+       position: absolute;
+       left:2%;
+       top:317%;
+       height:200px;
+       width:320px;
+   }
+   .popular img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .popular p{
+       position: absolute;
+       top:335%;
+       left:2%;
+   }
+
+   .popula img{
+       position: absolute;
+       left:25%;
+       top:317%;
+       height:200px;
+       width:320px;
+   }
+   .popula img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .popula p{
+       position: absolute;
+       top:335%;
+       left:25%;
+   }
+
+   .popul img{
+       position: absolute;
+       left:48%;
+       top:317%;
+       height:200px;
+       width:320px;
+   }
+   .popul img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .popul p{
+       position: absolute;
+       top:335%;
+       left:48%;
+   }
+
+   .popu img{
+       position: absolute;
+       left:71%;
+       top:317%;
+       height:200px;
+       width:320px;
+   }
+   .popu img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .popu p{
+       position: absolute;
+       top:335%;
+       left:71%;
+   }
+
+   .English{
+       position: absolute;
+            top:362%;
+            left:2%;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .englis img{
+       position: absolute;
+       left:2%;
+       top:365%;
+       height:200px;
+       width:320px;
+   }
+   .englis img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .englis p{
+       position: absolute;
+       top:385%;
+       left:2%;
+   }
+
+   .engli img{
+       position: absolute;
+       left:25%;
+       top:365%;
+       height:200px;
+       width:320px;
+   }
+   .engli img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .engli p{
+       position: absolute;
+       top:385%;
+       left:25%;
+   }
+
+   .engl img{
+       position: absolute;
+       left:48%;
+       top:365%;
+       height:200px;
+       width:320px;
+   }
+   .engl img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .engl p{
+       position: absolute;
+       top:385%;
+       left:48%;
+   }
+
+   .eng img{
+       position: absolute;
+       left:71%;
+       top:365%;
+       height:200px;
+       width:320px;
+   }
+   .eng img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .eng p{
+       position: absolute;
+       top:385%;
+       left:71%;
+   }
+
+
+   .Punjabi{
+       position: absolute;
+            top:412%;
+            left:2%;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+   }
+   .pu img{
+       position: absolute;
+       left:2%;
+       top:410%;
+       height:200px;
+       width:320px;
+   }
+   .pu img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .pu p{
+       position: absolute;
+       top:427%;
+       left:2%;
+   }
+
+   .punja img{
+       position: absolute;
+       left:25%;
+       top:410%;
+       height:200px;
+       width:320px;
+   }
+   .punja img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .punja p{
+       position: absolute;
+       top:427%;
+       left:25%;
+   }
+
+   .punj img{
+       position: absolute;
+       left:48%;
+       top:410%;
+       height:200px;
+       width:320px;
+   }
+   .punj img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .punj p{
+       position: absolute;
+       top:427%;
+       left:48%;
+   }
+
+   .pun img{
+       position: absolute;
+       left:71%;
+       top:410%;
+       height:200px;
+       width:320px;
+   }
+   .pun img:hover{
+       height:36%;
+       width:21%;
+       overflow: hidden;
+   }
+   .pun p{
+       position: absolute;
+       top:427%;
+       left:71%;
+   }
+   </style> 
+<body>
+    <div class="textbox">
+        <ul>
+            <li><a href="login page.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="">search
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a></li>
+        <li><a href="playlist.html">playlist</a></li>
+        
+        <li><a href="music.html">Home
+            <i class="fa fa-home" aria-hidden="true"></i>
+        </a></li>
+        
+        </ul>
+    </div>  
+    <div class="icon">
+        <span>M</span>usic <span>A</span>ge<i class="fa fa-music" aria-hidden="true"></i>
+   
+    </div>
+    <div class="context">
+        <h6>Top Picks</h6>
+    </div>  
+<div class="cover">
+        <div class="Subcover">
+
+        </div>
+        <div class="coverimage">
+            <img src="https://i.ytimg.com/vi/feacqEgc7XQ/maxresdefault.jpg" width="400" height="200">
+        </div>
+</div>
+<div class="song">
+             <img src="https://i.ytimg.com/vi/6qBEydlWsZs/maxresdefault.jpg" width="400" height="50">
+</div>
+<div class="punjab">
+            <img src="https://i.ytimg.com/vi/3z23BQjVEDY/maxresdefault.jpg" width:"200" height:"100">       
+</div>
+<div class="english">
+    <img src="https://i.ytimg.com/vi/_2tgMOeRP_Q/hqdefault.jpg">
+</div> 
+<div class="content">
+    <h6>Moods&Collection</h6>
+</div>
+<div class="romance">
+      <img src="https://a10.gaanacdn.com/images/playlists/29/1383029/crop_480x480_1383029_1488265178.jpg" width:"100" height:"70">
+</div>
+<div class="gaana">
+    <img src="https://st1.bgr.in/wp-content/uploads/2020/07/Gaana-tiktok-app-HotShots.jpg">
+</div>
+<div class="party">
+    <img src="https://i.ytimg.com/vi/UJpjx0ssWHE/maxresdefault.jpg">
+</div>
+<div class="bhakti">
+    <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3Zl5zob5/size_xxl.webp">
+</div>
+<div class="mirchi">
+    <img src="https://a10.gaanacdn.com/images/radio/18/18/crop_175x175_18.jpg">
+</div>
+<div class="show">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvlg_ANUDKJ54JwJbkWkW5QWqqdL7DaUX8aw&usqp=CAU">
+</div>
+<div class="hip">
+    <img src="https://image.slidesharecdn.com/hiphop-170114101754/95/hiphop-dancing-1-638.jpg?cb=1484389090">
+</div>
+<div class="bhangra">
+    <img src="https://cdn5.vectorstock.com/i/1000x1000/79/34/bhangra-dance-concept-men-and-woman-in-national-vector-14127934.jpg">
+</div>
+<div class="con">
+    <h6>Recently Played</h6>
+    
+</div>
+    <div class="single-team">
+        <img src="https://i.ytimg.com/vi/SD4Z8dlZPd8/maxresdefault.jpg">
+        <div class="team-text">
+            <div class="a">
+            <h2>Genda PhoolL</h2>
+            <p>Badshah ft jacquline</p>
+           <p>
+                <a href=""><i class="fa fa-backward"></i></a>
+                <a href="playlist.html"><i class="fa fa-play"></i></a>
+                <a href=""><i class="fa fa-forward"></i></a>
+            </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="single">
+        <img src="https://i.ytimg.com/vi/Ghsa5EOHHAk/maxresdefault.jpg">
+        <div class="team">
+            <div class="b">
+            <h2>Teri Naar</h2>
+            <p>Nikk ft Avneet Kaur</p>
+           
+            <p>
+                <a href=""><i class="fa fa-backward"></i></a>
+                <a href="playlist.html"><i class="fa fa-play"></i></a>
+                <a href=""><i class="fa fa-forward"></i></a>
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <img src="https://m.media-amazon.com/images/M/MV5BYzk4ZmQyMTctZDU4NS00MGZiLWJmMjktZDMwZTRkNDI1MmJjXkEyXkFqcGdeQXVyNjQ0MTMxMTU@._V1_.jpg">
+        <div class="text">
+            <div class="c">
+            <h2>Yaad piya ki</h2>
+            <p>Neha kakkar ft divya kumar khosla</p>
+           
+            <p>
+               
+                <a href=""><i class="fa fa-backward"></i></a>
+                <a href="playlist.html"><i class="fa fa-play"></i></a>
+                <a href=""><i class="fa fa-forward"></i></a>
+            </p>
+            </div>
+        </div>
+    </div>
+<div class="artist">
+     <h6>Featured Artist</h6>
+</div>
+<div class="rounded">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkS4fGNNFGi2M67xQbIi589n7uysr9mgVVrg&usqp=CAU" >
+    <div class="t">
+        <h6>Arijit Singh</h6>
+</div>
+</div>
+<div class="round">
+    <img src="https://m.media-amazon.com/images/M/MV5BODI4NTkxOTkxMV5BMl5BanBnXkFtZTgwMzE0MDEzMTE@._V1_UX214_CR0,0,214,317_AL_.jpg">
+     <div class="t2">
+     <h6>Ed sheeran</h6>
+     </div>
+</div>
+<div class="roun">
+        <img src="https://th.thgim.com/entertainment/music/bp6kwn/article31244696.ece/alternates/FREE_435/Darshan-Raval">
+         <div class="t1">
+         <h6>Darshan rawal</h6>
+         </div>
+</div>
+<div class="rou">
+    <img src="https://static.toiimg.com/photo/67861182.cms">
+     <div class="t3">
+     <h6>Sonu Nigam</h6>
+     </div>
+</div>
+<div class="ro">
+    <img src="https://qph.fs.quoracdn.net/main-qimg-927bf1a710e5e88542173f6096774ea6">
+     <div class="t4">
+     <h6>Raftaar</h6>
+     </div>
+</div>
+<div class="art">
+    <h6>The 1990's</h6>
+</div>
+<div class="the">
+        <img src="https://i.ytimg.com/vi/-g6k8OKvwRo/maxresdefault.jpg">
+        <div class="mera">
+            <div class="g">
+            <h2>kitna pagal hai</h2>
+            kumar shanu
+            <p>
+                <audio controls>
+                    <source src="C:\Users\HP\Desktop\project\mera dil bhi kitna real.mpeg" type="audio/mpeg">
+                    </audio>
+            </p>
+            </div>
+        </div>
+</div>
+
+<div class="my">
+    <img src="https://i1.wp.com/www.lyricsbogie.com/wp-content/uploads/2020/06/aaye-ho-meri-zindagi-mein-lyrics.jpg?fit=1280%2C720&ssl=1">
+    <div class="dil">
+        <div class="h">
+        <h2>aaye ho meri zindigi mai</h2>
+        udit narayan
+        <p>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\aaye ho meri zindigi mai real.mpeg" type="audio/mpeg">
+                </audio>
+        </p>
+        </div>
+    </div>
+</div>
+
+<div class="name">
+    <img src="https://static.toiimg.com/photo/msid-64990350/64990350.jpg">
+    <div class="bhi">
+        <div class="i">
+        <h2>tip tip barsa paani</h2>
+        alka yagnik & udit narayan
+        <p>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\tip tip real.mpeg" type="audio/mpeg">
+                </audio>
+        </p>
+        </div>
+    </div>
+</div>
+
+<div class="is">
+    <img src="https://i.ytimg.com/vi/9a6UaCBEV6o/maxresdefault.jpg">
+    <div class="kitna">
+        <div class="s">
+        <h2>chand chupa badal mai</h2>
+        udit narayan &Alka yagnik
+        <p>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\chand chupa real.mpeg" type="audio/mpeg">
+                </audio>
+        </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="out">
+    <h6>Workout</h6>
+</div>
+<div class="work">
+    <img src="https://i.ytimg.com/vi/XmJ9geRV9KQ/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\blood sweat and tear real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+<div class="wor">
+    <img src="https://i.ytimg.com/vi/TduHf1tWDvI/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\camillo real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+<div class="wo">
+    <img src="https://i.ytimg.com/vi/QApAjEenJK0/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\kesha real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+<div class="ow">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Lizzo_-_Good_as_Hell.png/220px-Lizzo_-_Good_as_Hell.png">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\lizzo real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+<div class="pop">
+    <h6>Popular hindi</h6>
+</div>
+<div class="popular">
+    <img src="https://i.ytimg.com/vi/lxcjV59jsoA/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\sweetheart real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+<div class="popula">
+    <img src="https://i.ytimg.com/vi/MiCjwOGxuOU/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\rakh real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="popul">
+    <img src="https://i.ytimg.com/vi/B_hbJRNInkA/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\kurta pajma real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="popu">
+    <img src="https://i.ytimg.com/vi/5LBB6OV3Ano/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\merea lia real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+
+<div class="English">
+    <h6>Popular English</h6>
+</div>
+<div class="englis">
+    <img src="https://i.ytimg.com/vi/zIOVMHMNfJ4/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\shake it off real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="engli">
+    <img src="https://411mania.com/wp-content/uploads/2015/03/fofuptown.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\uptwn real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="engl">
+    <img src="https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\shape of u real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="eng">
+    <img src="https://www.usmagazine.com/wp-content/uploads/2020/01/Justin-Bieber-Releases-Music-Video-for-Hailey-Baldwin-Inspired-Song-Yummy-.jpg?w=700&quality=70&strip=all" >
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\yummy real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+
+
+<div class="Punjabi">
+    <h6>Popular Punjabi</h6>
+</div>
+<div class="pu">
+    <img src="https://i.ytimg.com/vi/b0sJWquITzU/hqdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\lehenga real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="punja">
+    <img src="https://i.ytimg.com/vi/Oozz4APJpiM/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\cute real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="punj">
+    <img src="https://i.ytimg.com/vi/0tw2o702EJY/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\best friend real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+<div class="pun">
+    <img src="https://i.ytimg.com/vi/tUgq-LNwn5c/maxresdefault.jpg">
+    <p>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\lohri real.mpeg" type="audio/mpeg">
+            </audio>
+    </p>
+</div>
+
+</body>
+</html>
