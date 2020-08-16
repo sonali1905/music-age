@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <title>playlist</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        background-image:url("https://wallpapercave.com/wp/VhjRw19.jpg");
+        background-size: cover;
+        color:#fff !important;
+    }
+    .music-container{
+        font-family: sans-serif;
+        width:1200px;
+        left:50%;
+        top:57%;
+        transform: translate(-50%,-50%);
+        display:block;
+        position: absolute;
+        background-image: linear-gradient(#6c6cff,#6b3636);
+    }
+    .music-header{
+        width:100%;
+        height:50px;
+        border-bottom: 1 px solid #555;
+        background-image: linear-gradient(#6b3636,red);
+    }
+    .music-header .fa-angle-left{
+        float:left;
+        margin-top:15px;
+        margin-left:10px;
+        cursor:pointer;
+    }
+    .music-header .fa-search{
+        float:right;
+        margin-top:15px;
+        margin-right:10px;
+        cursor:pointer;
+    }
+    .music-header .title{
+        width:250px;
+        height:30px;
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 10px;
+        text-align: right;
+        padding-left: 10px;
+            }
+    .music-playlist
+    {
+        width:100%;
+        height:50px;
+
+    }
+    .music-menu{
+        width:100%;
+           height:40px;
+            }
+            .menu{
+                width:95%;
+                height:40px;
+                margin: 15px 30px auto;
+                border-radius:10px;
+                border:1px solid #fff;
+            }
+           .menu ul{
+                font-size: 30px;
+                padding: initial;
+                
+            }
+            .menu li{
+                list-style-type: none;
+                display: inline-block;
+                border-right: 1px solid #fff;
+            }
+           .menu ul li a{
+                color:#fff;
+                padding:5px 15px;
+                letter-spacing: 1px;
+            }
+          .menu  ul li:last-child{
+                border-right:none;
+            }
+    .music-box{
+        width:100%;
+        height:410px;
+        overflow:scroll;
+        overflow-x:hidden;
+    }
+    .music-box::-webkit-scrollbar{
+        margin-left: 10px;
+        width:0px;
+        background:transparent;
+    }
+    .music-box .fa-heart
+    {
+        float:absolute;
+        left:80%;
+        margin-right:100px;
+        margin-top:30px;
+        font-weight:normal;
+        color:red;
+        cursor:pointer;
+    }
+    .music-info{
+        width:100%;
+        height:50px;
+        display:flex;
+
+    }
+    .music-img{
+        width: 300px;
+        height:500px;
+    }
+    .music-img img{
+        width:200px;
+        height:80px;
+        margin:2px 5px;
+        padding:1px;
+    }
+   .music-name{
+       width:300px;
+       padding: 0 5px;
+       height:50px;
+   }
+   .music-name h6{
+       margin-top:17px;
+       margin-left:10px;
+       font-size:25px;
+       font-weight: normal;
+       letter-spacing: 1px;
+       cursor:pointer;
+       line-height: 15px;
+   }
+   .music-name p{
+       font-size: 15px;
+       line-height: 8px;
+       letter-spacing: 1px;
+       color:#e1e1e1;
+       cursor:pointer;
+   }
+   hr{
+       width:95%;
+       margin-top: 38px !important;
+       margin-bottom: 6px !important;
+
+   }
+  .music-play{
+       width:100%;
+       height:60px;
+       display:flex;
+       background-image: linear-gradient(#6c6cff,#6b3636);
+   }
+   .play-image img {
+       float:right;
+       width:450px;
+       height:120px;
+       margin:5px;
+       border-radius: 5px;
+   }
+   .play-controls{
+       width:300px;
+       height:100px;
+   }
+   .controls{
+       width:285px;
+       height:70px;
+       display:flex;
+       
+   }
+   .song-name{
+       width:250px;
+       height:30px;
+       
+   }
+   .song-name h5{
+       margin-top:10px;
+       margin-left:70px;
+       font-size:15px;
+       font-weight: normal;
+       letter-spacing: 1px;
+       line-height: 6px;
+   }
+   .song-name p{
+       font-size:10px;
+       margin-left: 20px;
+
+       letter-spacing: 1px;
+       color:#ccc;
+   }
+   .play-icon{
+       width: 250px;
+       height:150px;
+   }
+   .play-icon .fa{
+       width:30px;
+       height:30px;
+       float:right;
+       color:#000;
+       border-radius: 50%;
+       background-color: #999;
+       margin:15px 13px 0 auto;
+       padding :9px 11px;
+       cursor:pointer
+   }
+   .play-icon .fa-play{
+       background-color: #fff;
+   }
+   .music-progress{
+       width:960px;
+       margin-left: 10px;
+   }
+   .music-progress .progress{
+       height:2px !important;
+       background-color: #999;
+   }
+   .music-progress .progress-bar{
+    width:0%;
+    background-color: #fff;
+    animation: width 10s infinite;
+   }
+   @keyframes width{
+       100%{width:100; }
+   }
+   .icon{
+        font-size:70px;
+        color:rebeccapurple;
+        font-family: kulim park,sans-serif;
+        position: absolute;
+        left:1%;
+        font-weight: bold;
+    }
+    span{
+        color:hotpink;
+    }
+</style>
+<body>
+   <div class="music-container">
+       <div class="music-header">
+        <i class="fa fa-angle-left" ></i>
+        <div class="title"><p>My Music</p></div>
+        <i class="fa fa-search" ></i>
+    </div>
+    <div class="music-playlist">
+        <div class="music-menu text-center">
+            <div class="menu">
+                <ul>
+                     <li><a href="music.html">Home</a></li>
+                     <li><a href="track.html">Albums</a></li>
+                     <li><a href="track.html">Artist</a></li>
+                     <li><a href="playlist.html">Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-box">
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/SD4Z8dlZPd8/maxresdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Genda Phool</h6>
+                <p>Badshah Ft Jacquline </p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\genda phool real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div>
+        <i class="fa fa-heart"></i>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/Ghsa5EOHHAk/maxresdefault.jpg" width="150"height="90">
+            </div>
+
+            <div class="music-name">
+                <h6>Teri Naar</h6>
+                <p> Nikk Ft Avneet Kaur</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\teri naar real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+          
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzk4ZmQyMTctZDU4NS00MGZiLWJmMjktZDMwZTRkNDI1MmJjXkEyXkFqcGdeQXVyNjQ0MTMxMTU@._V1_.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Yaad Piya Ki aane lgi</h6>
+                <p> Neha Kakkar Ft Divya Khosla Kumar</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\yaad pia ki aane real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/hoNb6HuNmU0/maxresdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Khariyat</h6>
+                <p> Arijit Singh</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\khariyat real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/b0sJWquITzU/hqdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Lehenga</h6>
+                <p> Jass Manak Ft Mahira sharma</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\lehenga real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/nlz77LwNyxk/maxresdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Lamberghini</h6>
+                <p> Doorbean Ft Ragini</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\lamberghini real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://a10.gaanacdn.com/gn_img/albums/R7vKX66Wmr/7vKXawvV3m/size_xxl_1543033357.webp" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Leja re</h6>
+                <p> Dhavni Bhanushali</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\leja re real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://www.usmagazine.com/wp-content/uploads/2020/01/Justin-Bieber-Releases-Music-Video-for-Hailey-Baldwin-Inspired-Song-Yummy-.jpg?w=700&quality=70&strip=all" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Yummy</h6>
+                <p> Justin Beiber</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\yummy real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://filmysongs.in/wp-content/uploads/2019/03/Bumro-Song-Mp3-Download-1.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Bumro Bumro</h6>
+                <p> Vishal mishra & Kamaal khan</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\bumro bumro real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/m9tnUEFLzQs/maxresdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Bhankas</h6>
+                <p> Baapi lehri,Dev negi , Jonita Gandhi</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\bhankas real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/HqUeSjsYLNU/maxresdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Makhna</h6>
+                <p> Asses kaur & yaseer Desai</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\makhna real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Shape of You</h6>
+                <p> Ed sheeran</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\shape of u real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+        <div class="music-info">
+            <div class="music-img">
+                <img src="https://i.ytimg.com/vi/ddcauxzg5HU/maxresdefault.jpg" width="150"height="90">
+            </div>
+            <div class="music-name">
+                <h6>Tagdi</h6>
+                <p>Anu kadyan & Gagan haryanvi</p>
+            </div>
+            <audio controls>
+                <source src="C:\Users\HP\Desktop\project\tagdi real.mpeg" type="audio/mpeg">
+                </audio>
+            <i class="fa fa-heart"></i>
+
+        </div><hr>
+
+    </div>
+<div class="music-Play">
+    <div class="play-image">
+        <img src="https://i.ytimg.com/vi/zXWJLEE7LeI/maxresdefault.jpg" width="250" height="140">
+    </div>
+    <div class="play controls">
+        <div class="controls">
+            <h5>Butta Bumma</h5>
+            <p>Thaaman ft Armaan malik</p>
+        </div>
+        <div class="play-icon">
+            <i class="fa fa-step-backward"></i>
+            <i class="fa fa-play"></i>
+            <i class="fa fa-step-forward"></i>
+        </div>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\butta bumma real.mpeg" type="audio/mpeg">
+            </audio>
+    </div>
+
+    <div class="music-progress">
+        <div class="progress">
+            <div class="progrss-bar"></div>
+
+        </div>
+    </div>
+</div>
+</div>
+<div class="icon">
+    <span>M</span>usic <span>A</span>ge<i class="fa fa-music" aria-hidden="true"></i>
+
+</div>
+</body>
+</html>

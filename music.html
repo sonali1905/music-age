@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cutive' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Music 1st page</title>
+    <style>
+        .textbox{
+            float: right;
+            border:1px solid solid black;
+        }
+        ul li{
+            float:left;
+            list-style-type: none;
+            width: 100px;
+            text-transform: uppercase;
+            font-style: bold;
+            font-family: kalim park,sans-serif;
+        }
+        ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        ul li a:hover{
+               color:hotpink;
+               border-bottom:2px solid hotpink;
+               font-weight: normal;
+        }
+        body{
+           background: url(https://c4.wallpaperflare.com/wallpaper/877/405/217/white-music-headphones-disk-wallpaper-preview.jpg) no-repeat;
+            background-size: cover;
+        }
+        .cover{
+            border: 1px solid black;
+            text-align:center;
+            width:400px;
+            height:450px;
+            position:absolute;
+            left:10%;
+            top:20%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 16px 7px;
+            opacity:0.9;
+        }
+        .Subcover{
+           border-bottom: 1px solid none;
+           background: black;
+           width: 400px;
+           height:450px;
+           opacity:0.6;
+           border-radius: 8px;
+        }
+        .cover-image{
+            text-align: center;
+
+        }
+        img{
+            border-radius: 20px;
+            position: absolute;
+            left:25%;
+            top:10%;
+            height:50%;
+            width:50%;
+            margin:-10px -9px;
+            opacity:0.8;
+        }
+        .text{
+            position: absolute;
+            text-align: center;
+            left:10%;
+            top:60%;
+        }
+        h1{
+            color:black;
+            line-height:7px; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+        h2{
+            line-height:5px;
+            font-family: kulim park,sans-serif;
+             font-weight:bold;
+             font-size:0.3;
+             font-weight:14px;
+             opacity:0.9;
+
+        }
+        .line{
+           border-bottom: 2px solid white;
+           position: absolute;
+           left:25%;
+           top:80%;
+           width:220px;
+           box-shadow:1px 0px 4px;
+           color:hotpink;
+        }
+        .fa-circle{
+            color:black;
+            position: absolute;
+            left:35%;
+            margin-top:-7px;
+        }
+        h3{
+            position: absolute;
+            left:25%;
+            top:77%;
+            font-size:14px;
+            font-family: kulim park sans-serif;
+        }
+        h4{
+            position:absolute;
+            left:73%;
+            top:75%;
+            font-family:kulim park sans-serif ;
+        }
+        .player{
+            border-bottom: 1px solid white;
+            font-size: 30px;
+        }
+        .fa-pause{
+            color:black;
+            position:absolute;
+            left:40%;
+            top:83%;
+
+        }
+        .forward{
+            font-size: 30px;
+        }
+        .fa-forward{
+            color:white;
+            position: absolute;
+            left:50%;
+            top:83%;
+        }
+        .forward:hover{
+            font-size:50px;
+        }
+        .backward{
+            font-size: 30px;
+        }
+        .fa-backward{
+            color:white;
+            position: absolute;
+            left:30%;
+            top:83%;
+        }
+        .backward:hover{
+            font-size: 50px;
+        }
+        .retweet{
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .fa-retweet{
+            color:hotpink;
+            position: absolute;
+            top:84%;
+            left:23%;
+        }
+        .repeat{
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .fa-repeat{
+            color:hotpink;
+            position:absolute;
+            top:84%;
+            left:60%;
+        }
+        .context{
+           position: absolute;
+           left:37%;
+           top:15%;
+           
+        }
+        h5{
+            font-size: 50px;
+            color:purple;
+            font-family:titillium web,sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        font{
+            color:purple;
+            opacity:0.7;
+        }
+        h6{
+            font-size:20px;
+            color:rebeccapurple;
+            font-family: titillium web,sans serif;
+            font-weight: normal;
+            width:550px;
+            margin-top: -16%;
+            word-spacing:5px;
+            opacity:0.8;
+            text-align:justify;
+        }
+        .box{
+            position:absolute;
+            left:40%;
+            top:55%;
+        }
+        input[type="submit"]{
+            padding:10px;
+            border:none;
+            opacity:0.8;
+            color:white;
+            border-radius:4px;
+            background-color:rebeccapurple;
+                    }
+                    input[type="submit"]:hover{
+                        background-color: deeppink;
+                    }
+    .icon{
+        font-size:50px;
+        color:rebeccapurple;
+        font-family: kulim park,sans-serif;
+        position: absolute;
+        left:1%;
+        font-weight: bold;
+    }
+    .fa-music{
+        color:rebeccapurple;
+        font-weight: bold;
+    }
+    span{
+        color:hotpink;
+    }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="textbox">
+        <ul>
+            
+            <li> <a href="music.html"><b>Home</b>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a></li>
+            
+            <li> <a href="login page.htmls"><b>Albums</b>
+                <i class="fa fa-music" aria-hidden="true"></i>
+            </a></li>
+            <li> <a href=""><b>Search</b>
+                <i class="fa fa-search" aria-hidden="true"></i>
+
+            </a></li>
+            <li> <a href="login page.html"><b>Login</b>
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+
+            </a></li>
+        </ul>
+    </div>
+    <div class="cover">
+        <div class="Subcover">
+
+        </div>
+        <div class="coverimage">
+            <img src="https://timesofindia.indiatimes.com/thumb/msid-74590468,width-1200,height-900,resizemode-4/.jpg" width:100 height:100>
+           
+        </div>
+    
+    <div class="text">
+        <h1><b>TRACK</b></h1>
+        <h2><b>NEHA KAKKAR</b></h2>
+        <audio controls>
+            <source src="C:\Users\HP\Desktop\project\kalla sonhai nhi real.mpeg" type="audio/mpeg">
+            </audio>  
+    </div>
+    <!-- <div class="line">
+        <i class="fa fa-circle" aria-hidden="true"></i>
+    </div> -->
+    <!-- <div class="number">
+        <h3>4.45</h3>
+        <h4>10.45</h4>
+    </div> -->
+    <!-- <div class="player">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+
+    </div>
+    <div class="forward">
+        <i class="fa fa-forward" aria-hidden="true"></i>
+    </div>
+    <div class="backward">
+        <i class="fa fa-backward" aria-hidden="true"></i>
+
+    </div> -->
+    <div class="retweet">
+        <i class="fa fa-retweet" aria-hidden="true"></i>
+
+    </div>
+    <div class="repeat">
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+    </div>
+    </div  >
+    <div class="context">
+        <p><h5>Without<font> Music Life</font> is </p>
+          <p>  <font>unthinkable</font></p></h5>
+
+       <h6>Music gives a soul to the universe,wings to the mind,flight 
+           to the imagination and life to everythinh</h6>
+    </div>
+    <div class="box">
+       <form action="login page.html" value="Get more">
+                    <input type="Submit" value="Get more">
+        </form>
+        
+    </div>
+  <div class="icon">
+      <span>M</span>usic <span>A</span>ge<i class="fa fa-music" aria-hidden="true"></i>
+ 
+  </div>
+</body>
+</html>
